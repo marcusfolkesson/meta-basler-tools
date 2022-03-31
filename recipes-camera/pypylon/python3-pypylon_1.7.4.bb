@@ -14,6 +14,6 @@ S = "${WORKDIR}/git"
 
 DEPENDS = "pylon python3 swig-native python3-setuptools-native"
 RDEPENDS_${PN} = "python3-numpy"
-INSANE_SKIP_${PN} += "already-stripped"
+INSANE_SKIP:${PN} += "already-stripped"
 
 export PYLON_ROOT = "${WORKDIR}/recipe-sysroot/opt/pylon"
